@@ -41,7 +41,7 @@ func main() {
 	var err error
 
 	if len(args) < 1 {
-		fmt.Println("reading from stdin")
+		fmt.Fprintln(os.Stderr, "reading from stdin...")
 		reader = os.Stdin
 	} else {
 		reader, err = os.Open(args[0])
