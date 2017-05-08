@@ -2,6 +2,9 @@
 
 Easily encode/decode Kubernetes "Secrets" yaml.
 
+Kubernetes stores secrets as base64 encoded values. `leviathan` is a tool that
+allows you to encode/decode these values in yaml without altering the structure.
+
 ## Installation
 
 ```bash
